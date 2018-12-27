@@ -49,6 +49,7 @@ class TodoTableViewController: UITableViewController {
 
         cell.titleLabel.text = todo.title
         cell.taskLabel.text = todo.task
+        cell.dateLabel.text = todo.date
         
         return cell
     }

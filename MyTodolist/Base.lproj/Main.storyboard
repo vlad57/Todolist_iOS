@@ -94,11 +94,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aaJ-VM-Eqm">
+                                <rect key="frame" x="16" y="172" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="aaJ-VM-Eqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0pA-xB-BmI"/>
+                            <constraint firstItem="aaJ-VM-Eqm" firstAttribute="top" secondItem="fR8-gw-ge6" secondAttribute="bottom" constant="8" id="5Lb-TN-C7V"/>
                             <constraint firstItem="fR8-gw-ge6" firstAttribute="top" secondItem="oUG-gd-FLc" secondAttribute="bottom" constant="19" id="7aP-0o-lXp"/>
                             <constraint firstItem="oUG-gd-FLc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BM2-6P-luR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aaJ-VM-Eqm" secondAttribute="trailing" constant="16" id="Dax-J5-Keg"/>
                             <constraint firstItem="fR8-gw-ge6" firstAttribute="top" secondItem="oUG-gd-FLc" secondAttribute="bottom" constant="19" id="a7w-kT-jEF"/>
                             <constraint firstItem="fR8-gw-ge6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="atL-2Q-bR8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oUG-gd-FLc" secondAttribute="trailing" constant="16" id="bUu-gH-Xvr"/>
@@ -120,6 +129,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="dateTextEntry" destination="aaJ-VM-Eqm" id="csb-np-LUJ"/>
                         <outlet property="saveButton" destination="KI3-kd-qUf" id="H0v-48-nDL"/>
                         <outlet property="taskEntry" destination="fR8-gw-ge6" id="YJm-oS-yIB"/>
                         <outlet property="titleEntry" destination="oUG-gd-FLc" id="qdl-PE-A8c"/>
